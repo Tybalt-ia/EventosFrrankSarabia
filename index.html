@@ -12,18 +12,21 @@
 </head>
 
 <body>
-    <!-- masa corporal-->
+    
+
     <div class="p-4 d-flex">
+        
         <div class="col-4">
+            <h1> IMC </h1>
             <div class="mb-3 col-7">
                 <label for="estatura" class="form-label">estatura</label>
                 <div class="form-text">en centimetros:</div>
-                <input type="number" class="form-control" id="estatura" aria-describedby="estatura">
+                <input type="number" min=0 class="form-control" id="estatura" aria-describedby="estatura">
             </div>
             <div class="mb-3 col-7">
                 <label for="peso" class="form-label">peso</label>
                 <div class="form-text">en kilogramos:</div>
-                <input type="number" class="form-control" id="peso" aria-describedby="peso">
+                <input  type="number" min=0 class="form-control" id="peso" aria-describedby="peso">
             </div>
 
             <button id="botonCalcularMasa" type="button" class="btn btn-primary">calcular</button>
