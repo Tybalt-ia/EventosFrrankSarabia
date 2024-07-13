@@ -32,3 +32,21 @@ botonCalcularMasa.addEventListener('click', (e) => {
 
 })
 
+let imputPesos = document.getElementById("Peso")
+
+imputPesos.addEventListener('keyup', (e) => {
+    let cifraPeso = e.target.value
+    let resultadoPeso = (cifraPeso/3900)
+    let Dolar = document.getElementById("Dolar")
+    Dolar.value = resultadoPeso
+})
+
+let imputDolar = document.getElementById("Dolar")
+
+imputDolar.addEventListener('keyup', (e) => {
+    let cifraDolar = e.target.value
+    let resultadoDolar = (cifraDolar*3900)
+    let Peso = document.getElementById ("Peso")
+    Peso.value = resultadoDolar
+})
+
